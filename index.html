@@ -24,7 +24,7 @@
     <title>Rockstart Outfitters</title>
   </head>
   <body>
-    <div class="promo-banner container-fluid">
+    <div class="promo-banner w-100">
       <div class="promo-text">
         <p class="text-center">Save extra 15% with code SHOP2021</p>
       </div>
@@ -39,8 +39,8 @@
           height="50"
           width="50"
         />
-        <a href="index.html" class="navbar-brand nav-link ml-3"
-          >Rockstar Outfitters</a
+        <a href="index.html" class="navbar-brand nav-link"
+          >Rockstar <span class="d-none d-md-inline">Outfitters</span></a
         >
         <button
           class="navbar-toggler ml-auto"
@@ -70,13 +70,59 @@
             </li>
             <li class="nav-item">
               <a href="" class="nav-link"
-                ><i class="fa fa-user mr-1"></i>User</a
+                ><i class="fa fa-heart mr-1"></i>Wishlist</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href=""
+                role="button"
+                data-toggle="modal"
+                data-target="#login-modal"
+                class="nav-link"
+                ><i class="fa fa-user mr-1"></i>Sign In</a
               >
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <div class="modal fade" id="login-modal" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h class="modal-title text-center"> Sign In </h>
+            <button class="close" type="button" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form> 
+                <div class="form-row text-center">
+                  <div class="col-8 form-group offset-2">
+                    <label for="email" class="col-form-label">email</label>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="enter email">
+                  </div>
+                </div>
+                <div class="form-row text-center">
+                  <div class="col-8 form-group offset-2">
+                    <label for="password" class="col-form-label text-center">password</label>
+                    <input type="text" class="form-control align-self-center" id="password" name="password" placeholder="enter password">
+                  </div>
+                </div>
+                <div class="form-row text-center">
+                  <div class="col">
+                    <button class="btn btn-sm login-btn">Login</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- <div class="header-body">
       <div class="container">
@@ -151,11 +197,34 @@
       </div>
     </div> -->
 
-    <div class="w-screen">
-          <video autoplay muted loop class="video">
-            <source src="images/beach-slide-video.mp4" type="video/mp4" />
-          </video>
-    </div>
+    <main>
+      <div class="w-100">
+        <div class="w-100 row padding-0">
+          <div class="col-12 col-sm-4 padding-0 model-pic-1 center-block">
+            <h3 class="text-center d-none d-sm-block text-white p-1">
+              New Arrivals
+            </h3>
+            <div class="row offset-2 text-left mt-auto">
+              <div class="col-6 col-sm-12 col-lg-6 py-5 p-sm-2">
+                <button class="btn btn-sm mx-auto shop-him-her-btn">
+                  SHOP HIM
+                </button>
+              </div>
+              <div class="col-6 col-sm-12 col-lg-6 py-5 p-sm-2">
+                <button class="btn btn-sm mx-auto shop-him-her-btn">
+                  SHOP HER
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-8 padding-0 video-1 w-100">
+            <video autoplay muted loop class="video">
+              <source src="images/beach-slide-video.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer class="site-footer">
       <div class="footer">
@@ -185,19 +254,22 @@
           </div>
           <div class="col-12 col-sm-3 text-center">
             <p class="footer-head">Location</p>
-            <p>
+            <p class="footer-desc">
               Rockstar Outfitters, DE <br />
               United States, 98605
             </p>
           </div>
           <div class="col-12 col-sm-3 text-center">
             <p class="footer-head">Customer Service</p>
-            <a role="button" class="btn btn-link" href="tel:+18002451894"
+            <a
+              role="button"
+              class="btn btn-link footer-desc"
+              href="tel:+18002451894"
               ><i class="fa fa-phone"></i> 1-800-245-1894</a
             ><br />
             <a
               role="button"
-              class="btn btn-link"
+              class="btn btn-link footer-desc"
               href="mailto:routfitters@ac1.com"
               ><i class="fa fa-envelope-o"></i> routfitters@ac1.com</a
             >
@@ -206,17 +278,19 @@
             <p class="footer-head">About Rockstar</p>
             <ul class="list-unstyled">
               <li>
-                <a role="button" class="btn btn-link" href=""
+                <a role="button" class="btn btn-link footer-desc" href=""
                   >Terms and Policies</a
                 >
               </li>
               <li>
-                <a role="button" class="btn btn-link" href=""
+                <a role="button" class="btn btn-link footer-desc" href=""
                   >Our History and Motto</a
                 >
               </li>
               <li>
-                <a role="button" class="btn btn-link" href="">Legal Attorney</a>
+                <a role="button" class="btn btn-link footer-desc" href=""
+                  >Legal Attorney</a
+                >
               </li>
             </ul>
           </div>

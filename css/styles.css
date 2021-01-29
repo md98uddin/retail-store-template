@@ -1,18 +1,19 @@
 
-h1,h2,p {
+h1,h2,p, header {
     margin: 0;
 }
 
 .promo-banner {
-    background-color: #08005B;
+    background-color: #9f9ad8;
     color: white;
     width: 100%;
     text-align: center;
 }
 
 .navbar {
-    background-color: #3B3D60;
-    color: white;
+    background-color: #e5e5f0;
+    color: #000000;
+    font-weight:900;
 }
 
 .navbar-brand {
@@ -32,9 +33,28 @@ h1,h2,p {
     color: grey;
 }
 
+label {
+    color:black;
+    font-weight: 500;
+}
+
 .active {
     color: rgb(165, 158, 158);
     background-color: #52547a;
+}
+
+.modal-header {
+    background: #52547a;
+    color: white;
+}
+
+.modal-open {
+    overflow: scroll;
+}
+
+.login-btn {
+    background:#52547a;
+    color:white
 }
 
 .video {
@@ -42,24 +62,52 @@ h1,h2,p {
     height: 100%;
 }
 
+.w-100 {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.padding-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.shop-him-her-btn {
+    background:#f5efef;
+    color: #9c9c9a;
+    font-weight: 500;
+}
+
+.video-1 {
+    padding-bottom: 0;
+}
+
+.model-pic-1 {
+    background: linear-gradient(to right, #a2a4bd, rgb(193, 193, 214),rgb(193, 193, 214));
+}
+
+
 .container {
     width: 100%;
 }
 
-
-
 .site-footer {
     padding: 20px;
-    background-color: #08005B;
-    color: white;
+    background-color: #e5e5f0;
+    color: rgb(0, 0, 0);
     text-align: center;
-    height: 10%
+    height: 10%;
 }
 
 .footer-head {
     font-family: "Lobster", cursive;
     font-size: 1.25em;
     margin-bottom: 0px;
+}
+
+.footer-desc {
+    color: #000000;
+    font-weight: 500;
 }
 
 .btn-link,.nav-link {
