@@ -1,0 +1,397 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>Rockstart Outfitters Men's</title>
+  </head>
+  <body>
+    <div class="promo-banner w-100">
+      <div class="promo-text">
+        <p class="text-center">Save extra 15% with code SHOP2021</p>
+      </div>
+    </div>
+
+    <!--NAVBAR SECTION-->
+    <nav class="navbar navbar-expand-lg mt-0 sticky-top">
+      <div class="container-fluid">
+        <img
+          src="images/brand-logo.png"
+          alt=""
+          class="img-fluid"
+          height="50"
+          width="50"
+        />
+        <a href="index.html" class="navbar-brand nav-link"
+          >Rockstar <span class="d-none d-md-inline">Outfitters</span></a
+        >
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarOutfitters"
+        >
+          <span class="navbar-toggler-icon"
+            ><i class="fa fa-bars text-center mt-1"></i
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarOutfitters">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="mens.html" class="nav-link active">MEN'S</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">WOMEN'S</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">CLEARENCES</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link"
+                ><i class="fa fa-shopping-bag mr-1"></i>Cart</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link"
+                ><i class="fa fa-heart mr-1"></i>Wishlist</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href=""
+                role="button"
+                data-toggle="modal"
+                data-target="#login-modal"
+                class="nav-link"
+                ><i class="fa fa-user mr-1"></i>Sign In</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav aria-label="breadcrumb sticky-top">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active text-dark ol-breadcrumb" aria-current="page"> <a class="text-dark" href="index.html">Home</a> > Men's</li>
+        </ol>
+    </nav>
+
+    <!--LOG IN MODAL-->
+    <div class="modal fade" id="login-modal" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h class="modal-title text-center"> Sign In </h>
+            <button class="close" type="button" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="form-row text-center">
+                  <div class="col-8 form-group offset-2">
+                    <label for="email" class="col-form-label">email</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="enter email"
+                    />
+                  </div>
+                </div>
+                <div class="form-row text-center">
+                  <div class="col-8 form-group offset-2">
+                    <label for="password" class="col-form-label text-center"
+                      >password</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control align-self-center"
+                      id="password"
+                      name="password"
+                      placeholder="enter password"
+                    />
+                  </div>
+                </div>
+                <div class="form-row text-center">
+                  <div class="col">
+                    <button class="btn btn-sm login-btn">Login</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+
+    <div class="container men-products">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/black_shirt.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/blue_shirt.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/dark_blue_hoodie.webp" class="card-img-top " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/dark_red_shirt.webp" class="card-img-top " alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/grey_flannel_shirt.webp" class="card-img-top " alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/light_black_shirt.webp" class="card-img-top " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/light_blue_hoodie.webp" class="card-img-top " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/light_blue_oxford_shirt.webp" class="card-img-top " alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/pink_hoodie.webp" class="card-img-top " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/pitch_black_shirt.webp" class="card-img-top " alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/red_shirt.webp" class="card-img-top " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/red_stripes_shirt.webp" class="card-img-top " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/tan_hoodie.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/white_black_2pk_shirt.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4" style="width: 18rem;">
+                <div class="card">
+                    <img src="images/white_blue_2pk_shirt.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    </main>
+
+      <!--FOOTER SECTION-->
+      <footer class="site-footer">
+        <div class="footer">
+          <div class="row">
+            <div class="col-12 col-sm-3 text-center">
+              <p class="footer-head">Social</p>
+              <a
+                class="btn btn-social-icon btn-facebook"
+                href="http://facebook.com/"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-instagram"
+                href="http://instagram.com/"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-twitter"
+                href="http://twitter.com/"
+                ><i class="fa fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-youtube"
+                href="http://youtube.com/"
+                ><i class="fa fa-youtube"></i
+              ></a>
+            </div>
+            <div class="col-12 col-sm-3 text-center">
+              <p class="footer-head">Location</p>
+              <p class="footer-desc">
+                Rockstar Outfitters, DE <br />
+                United States, 98605
+              </p>
+            </div>
+            <div class="col-12 col-sm-3 text-center">
+              <p class="footer-head">Customer Service</p>
+              <a
+                role="button"
+                class="btn btn-link footer-desc"
+                href="tel:+18002451894"
+                ><i class="fa fa-phone"></i> 1-800-245-1894</a
+              ><br />
+              <a
+                role="button"
+                class="btn btn-link footer-desc"
+                href="mailto:routfitters@ac1.com"
+                ><i class="fa fa-envelope-o"></i> routfitters@ac1.com</a
+              >
+            </div>
+            <div class="col-12 col-sm-3 text-center">
+              <p class="footer-head">About Rockstar</p>
+              <ul class="list-unstyled">
+                <li>
+                  <a role="button" class="btn btn-link footer-desc" href=""
+                    >Terms and Policies</a
+                  >
+                </li>
+                <li>
+                  <a role="button" class="btn btn-link footer-desc" href=""
+                    >Our History and Motto</a
+                  >
+                </li>
+                <li>
+                  <a role="button" class="btn btn-link footer-desc" href=""
+                    >Legal Attorney</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+
+         <!--SCRIPTS-->
+         <script
+         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+         crossorigin="anonymous"
+       ></script>
+       <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+         crossorigin="anonymous"
+       ></script>
+       <script
+         src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+         crossorigin="anonymous"
+       ></script>
+  </body>
+</html>
