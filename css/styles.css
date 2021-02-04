@@ -39,7 +39,6 @@ label {
 }
 
 .active {
-    color: rgb(165, 158, 158);
     background-color: #9396b4;
 }
 
@@ -105,7 +104,6 @@ label {
     background-color: #e5e5f0;
     color: rgb(0, 0, 0);
     text-align: center;
-    height: 10%;
 }
 
 .footer-head {
@@ -171,6 +169,11 @@ label {
     background:#f1f1f8;
 }
 
+.card-title {
+    font-family:monospace;
+    font-weight: bold;
+}
+
 .card-img-top {
     
 }
@@ -180,6 +183,17 @@ label {
     margin-top: 0.5rem;
 }
 
+.products-grid {
+    text-align: center;
+}
+
+.fa-heart{
+    color:rgb(155, 8, 8);
+}
+
+.fa-shopping-bag {
+    color:rgb(102, 102, 56)
+}
 
 
 
