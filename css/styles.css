@@ -56,6 +56,10 @@ label {
     color:white
 }
 
+.checkout-btn {
+    text-align: center;
+}
+
 .video {
     width: 101.60%;
     height: 101%;
@@ -169,14 +173,17 @@ label {
     background:#f1f1f8;
 }
 
+.card {
+    animation-name:fadeInEffect;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
 .card-title {
     font-family:monospace;
     font-weight: bold;
 }
 
-.card-img-top {
-    
-}
 
 .add-save-btn {
     background: #cfcbf7;
@@ -195,6 +202,18 @@ label {
     color:rgb(102, 102, 56)
 }
 
+
+/* ANIMATIONS */
+
+@keyframes fadeInEffect {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 
 

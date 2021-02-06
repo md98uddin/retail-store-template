@@ -60,14 +60,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarOutfitters">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a href="mens.html" class="nav-link active">MEN'S</a>
+            <li class="nav-item">
+              <a href="mens.html" class="nav-link">MEN'S</a>
             </li>
             <li class="nav-item">
               <a href="womens.html" class="nav-link">WOMEN'S</a>
             </li>
             <li class="nav-item">
-              <a href="accessories.html" class="nav-link">ACCESSORIES</a>
+              <a href="#" class="nav-link active">ACCESSORIES</a>
             </li>
             <li class="nav-item">
               <a href="" class="nav-link" role="button" data-toggle="modal" data-target="#cart-modal"
@@ -104,72 +104,73 @@
         </li>
       </ol>
     </nav>
-     <!-- CART MODAL -->
-     <div class="modal fade" id="cart-modal" role="dialog">
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title text-center">Your Cart</h4>
-                  <button class="close" type="button" data-dismiss="modal">
-                      &times;
-                    </button>
-              </div>
-              <div class="modal-body">
-                  <div class="container-fluid table-responsive">
-                      <table class="table borderless">
-                          <thead>
-                              <tr>
-                                  <th scope="col"></th>
-                                  <th scope="col">Item</th>
-                                  <th scope="col">Size</th>
-                                  <th scope="col">Qty</th>
-                                  <th scope="col">$</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                          <tr>
-                              <td><img src="images/black_shirt.webp" alt="" height="75" width="75"></td>
-                              <td>Black Flannel Shirt</td>
-                              <td>S</td>
-                              <td>1</td>
-                              <td>$15.99</td>
-                          </tr>
-                          <tr>
-                              <td><img src="images/blue_slim_jeans.jpg" alt="" height="75" width="75"></td>
-                              <td>Blue Slim Jeans</td>
-                              <td>28x30</td>
-                              <td>1</td>
-                              <td>$24.99</td>
-                          </tr>
-                          <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Total</td>
-                            <td>$41.98</td>
-                          </tr>
-                          </tbody>
-                      </table>
-                      <div class="row">
-                        <div class="col-2">
-                          <button class="btn btn-sm login-btn">Checkout</button>
+
+    <!-- CART MODAL -->
+    <div class="modal fade" id="cart-modal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-center">Your Cart</h4>
+                    <button class="close" type="button" data-dismiss="modal">
+                        &times;
+                      </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid table-responsive">
+                        <table class="table borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Size</th>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">$</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><img src="images/black_shirt.webp" alt="" height="75" width="75"></td>
+                                <td>Black Flannel Shirt</td>
+                                <td>S</td>
+                                <td>1</td>
+                                <td>$15.99</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/blue_slim_jeans.jpg" alt="" height="75" width="75"></td>
+                                <td>Blue Slim Jeans</td>
+                                <td>28x30</td>
+                                <td>1</td>
+                                <td>$24.99</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td>Total</td>
+                              <td>$41.98</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                          <div class="col-2">
+                            <button class="btn btn-sm login-btn">Checkout</button>
+                          </div>
+                          <div class="col-2">
+                            <button class="btn btn-sm login-btn" data-dismiss="modal">Cancel</button>
+                          </div>
                         </div>
-                        <div class="col-2">
-                          <button class="btn btn-sm login-btn" data-dismiss="modal">Cancel</button>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--LOG IN MODAL-->
     <div class="modal fade" id="login-modal" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h class="modal-title text-center"> Sign In </h>
+            <h3 class="modal-title text-center"> Sign In </h3>
             <button class="close" type="button" data-dismiss="modal">
               &times;
             </button>
