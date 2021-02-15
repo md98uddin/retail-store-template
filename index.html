@@ -71,12 +71,22 @@
               <a href="accessories.html" class="nav-link">ACCESSORIES</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link" role="button" data-toggle="modal" data-target="#cart-modal"
+              <a
+                href=""
+                class="nav-link"
+                role="button"
+                data-toggle="modal"
+                data-target="#cart-modal"
                 ><i class="fa fa-shopping-bag mr-1"></i>Cart</a
               >
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link"
+              <a
+                href=""
+                class="nav-link"
+                role="button"
+                data-toggle="modal"
+                data-target="#wishlist-modal"
                 ><i class="fa fa-heart mr-1"></i>Wishlist</a
               >
             </li>
@@ -96,81 +106,171 @@
     </nav>
     <!-- CART MODAL -->
     <div class="modal fade" id="cart-modal" role="dialog">
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title text-center">Your Cart</h4>
-                  <button class="close" type="button" data-dismiss="modal">
-                      &times;
-                    </button>
-              </div>
-              <div class="modal-body">
-                  <div class="container-fluid table-responsive">
-                    <table class="table borderless">
-                      <thead>
-                        <tr>
-                          <th scope="col"></th>
-                          <th scope="col">Item</th>
-                          <th scope="col">Size</th>
-                          <th scope="col">Qty</th>
-                          <th scope="col">$</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <img
-                              src="images/black_shirt.webp"
-                              alt=""
-                              height="75"
-                              width="75"
-                            />
-                          </td>
-                          <td>Black Flannel Shirt</td>
-                          <td>S</td>
-                          <td>1</td>
-                          <td>$15.99</td>
-                          <td><i role="button" class="btn fa fa-trash"></i></td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <img
-                              src="images/blue_slim_jeans.jpg"
-                              alt=""
-                              height="75"
-                              width="75"
-                            />
-                          </td>
-                          <td>Blue Slim Jeans</td>
-                          <td>28x30</td>
-                          <td>1</td>
-                          <td>$24.99</td>
-                          <td><i role="button" class="btn fa fa-trash"></i></td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td>Total</td>
-                          <td>$41.98</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                      <div class="row">
-                        <div class="col-2">
-                          <a class="btn btn-sm login-btn text-white" href="checkout.html">Checkout</a>
-                        </div>
-                        <div class="col-2">
-                          <a class="btn btn-sm login-btn text-white" data-dismiss="modal">Cancel</a>
-                        </div>
-                      </div>
-                  </div>
-              </div>
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-center">Your Cart</h4>
+            <button class="close" type="button" data-dismiss="modal">
+              &times;
+            </button>
           </div>
+          <div class="modal-body">
+            <div class="container-fluid table-responsive">
+              <table class="table borderless">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">$</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img
+                        src="images/black_shirt.webp"
+                        alt=""
+                        height="75"
+                        width="75"
+                      />
+                    </td>
+                    <td>Black Flannel Shirt</td>
+                    <td>S</td>
+                    <td>1</td>
+                    <td>$15.99</td>
+                    <td><i role="button" class="btn fa fa-trash"></i></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="images/blue_slim_jeans.jpg"
+                        alt=""
+                        height="75"
+                        width="75"
+                      />
+                    </td>
+                    <td>Blue Slim Jeans</td>
+                    <td>28x30</td>
+                    <td>1</td>
+                    <td>$24.99</td>
+                    <td><i role="button" class="btn fa fa-trash"></i></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Total</td>
+                    <td>$41.98</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="row">
+                <div class="col-2">
+                  <a
+                    class="btn btn-sm login-btn text-white"
+                    href="checkout.html"
+                    >Checkout</a
+                  >
+                </div>
+                <div class="col-2">
+                  <a
+                    class="btn btn-sm login-btn text-white"
+                    data-dismiss="modal"
+                    >Cancel</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
+
+    <!-- WISHLIST MODAL -->
+    <div class="modal fade" id="wishlist-modal" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-center">Your Wishlist</h4>
+            <button class="close" type="button" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid table-responsive">
+              <table class="table borderless">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">$</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img
+                        src="images/red_shirt.webp"
+                        alt=""
+                        height="75"
+                        width="75"
+                      />
+                    </td>
+                    <td>Red Flannel Shirt</td>
+                    <td>S</td>
+                    <td>1</td>
+                    <td>$15.99</td>
+                    <td><i role="button" class="btn fa fa-trash"></i></td>
+                    <td><i role="button" class="btn fas fa-plus"></i></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="images/dark_blue_jeans.jpg"
+                        alt=""
+                        height="75"
+                        width="75"
+                      />
+                    </td>
+                    <td>Dark Blue Slim Jeans</td>
+                    <td>28x30</td>
+                    <td>1</td>
+                    <td>$24.99</td>
+                    <td><i role="button" class="btn fa fa-trash"></i></td>
+                    <td><i role="button" class="btn fas fa-plus"></i></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Total</td>
+                    <td>$41.98</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="row">
+                <div class="col-2">
+                  <a
+                    class="btn btn-sm login-btn text-white"
+                    data-dismiss="modal"
+                    >Cancel</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--LOG IN MODAL-->
     <div class="modal fade" id="login-modal" role="dialog">

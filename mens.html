@@ -70,12 +70,22 @@
               <a href="accessories.html" class="nav-link">ACCESSORIES</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link" role="button" data-toggle="modal" data-target="#cart-modal"
+              <a
+                href=""
+                class="nav-link"
+                role="button"
+                data-toggle="modal"
+                data-target="#cart-modal"
                 ><i class="fa fa-shopping-bag mr-1"></i>Cart</a
               >
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link"
+              <a
+                href=""
+                class="nav-link"
+                role="button"
+                data-toggle="modal"
+                data-target="#wishlist-modal"
                 ><i class="fa fa-heart mr-1"></i>Wishlist</a
               >
             </li>
@@ -104,83 +114,173 @@
         </li>
       </ol>
     </nav>
-     <!-- CART MODAL -->
-     <div class="modal fade" id="cart-modal" role="dialog">
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title text-center">Your Cart</h4>
-                  <button class="close" type="button" data-dismiss="modal">
-                      &times;
-                    </button>
-              </div>
-              <div class="modal-body">
-                  <div class="container-fluid table-responsive">
-                    <table class="table borderless">
-                      <thead>
-                        <tr>
-                          <th scope="col"></th>
-                          <th scope="col">Item</th>
-                          <th scope="col">Size</th>
-                          <th scope="col">Qty</th>
-                          <th scope="col">$</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <img
-                              src="images/black_shirt.webp"
-                              alt=""
-                              height="75"
-                              width="75"
-                            />
-                          </td>
-                          <td>Black Flannel Shirt</td>
-                          <td>S</td>
-                          <td>1</td>
-                          <td>$15.99</td>
-                          <td><i role="button" class="btn fa fa-trash"></i></td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <img
-                              src="images/blue_slim_jeans.jpg"
-                              alt=""
-                              height="75"
-                              width="75"
-                            />
-                          </td>
-                          <td>Blue Slim Jeans</td>
-                          <td>28x30</td>
-                          <td>1</td>
-                          <td>$24.99</td>
-                          <td><i role="button" class="btn fa fa-trash"></i></td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td>Total</td>
-                          <td>$41.98</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                      <div class="row">
-                        <div class="col-2">
-                          <a class="btn btn-sm login-btn text-white" href="checkout.html">Checkout</a>
-                        </div>
-                        <div class="col-2">
-                          <a class="btn btn-sm login-btn text-white" data-dismiss="modal">Cancel</a>
-                        </div>
-                      </div>
-                  </div>
-              </div>
+    <!-- CART MODAL -->
+    <div class="modal fade" id="cart-modal" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-center">Your Cart</h4>
+            <button class="close" type="button" data-dismiss="modal">
+              &times;
+            </button>
           </div>
+          <div class="modal-body">
+            <div class="container-fluid table-responsive">
+              <table class="table borderless">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">$</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img
+                        src="images/black_shirt.webp"
+                        alt=""
+                        height="75"
+                        width="75"
+                      />
+                    </td>
+                    <td>Black Flannel Shirt</td>
+                    <td>S</td>
+                    <td>1</td>
+                    <td>$15.99</td>
+                    <td><i role="button" class="btn fa fa-trash"></i></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="images/blue_slim_jeans.jpg"
+                        alt=""
+                        height="75"
+                        width="75"
+                      />
+                    </td>
+                    <td>Blue Slim Jeans</td>
+                    <td>28x30</td>
+                    <td>1</td>
+                    <td>$24.99</td>
+                    <td><i role="button" class="btn fa fa-trash"></i></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Total</td>
+                    <td>$41.98</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="row">
+                <div class="col-2">
+                  <a
+                    class="btn btn-sm login-btn text-white"
+                    href="checkout.html"
+                    >Checkout</a
+                  >
+                </div>
+                <div class="col-2">
+                  <a
+                    class="btn btn-sm login-btn text-white"
+                    data-dismiss="modal"
+                    >Cancel</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
+
+    <!-- WISHLIST MODAL -->
+    <div class="modal fade" id="wishlist-modal" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-center">Your Wishlist</h4>
+            <button class="close" type="button" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid table-responsive">
+              <table class="table borderless">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">$</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img
+                        src="images/red_shirt.webp"
+                        alt=""
+                        height="75"
+                        width="75"
+                      />
+                    </td>
+                    <td>Red Flannel Shirt</td>
+                    <td>S</td>
+                    <td>1</td>
+                    <td>$15.99</td>
+                    <td><i role="button" class="btn fa fa-trash"></i></td>
+                    <td><i role="button" class="btn fas fa-plus"></i></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="images/dark_blue_jeans.jpg"
+                        alt=""
+                        height="75"
+                        width="75"
+                      />
+                    </td>
+                    <td>Dark Blue Slim Jeans</td>
+                    <td>28x30</td>
+                    <td>1</td>
+                    <td>$24.99</td>
+                    <td><i role="button" class="btn fa fa-trash"></i></td>
+                    <td><i role="button" class="btn fas fa-plus"></i></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Total</td>
+                    <td>$41.98</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="row">
+                <div class="col-2">
+                  <a
+                    class="btn btn-sm login-btn text-white"
+                    data-dismiss="modal"
+                    >Cancel</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--LOG IN MODAL-->
     <div class="modal fade" id="login-modal" role="dialog">
@@ -529,121 +629,113 @@
         <div class="row">
           <div class="col-12 col-sm-6 col-md-4">
             <div class="card m-3">
-              <img
-              src="images/slim_jeans.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Black Ripped Jeans</h5>
-              <p class="card-subtitle">$29.99</p>
-              <button class="btn add-save-btn">
-                <i class="fa fa-shopping-bag mr-1"></i>Add to Cart
-              </button>
-              <button class="btn add-save-btn">
-                <i class="fa fa-heart mr-1"></i>Save
-              </button>
-            </div>
+              <img src="images/slim_jeans.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Black Ripped Jeans</h5>
+                <p class="card-subtitle">$29.99</p>
+                <button class="btn add-save-btn">
+                  <i class="fa fa-shopping-bag mr-1"></i>Add to Cart
+                </button>
+                <button class="btn add-save-btn">
+                  <i class="fa fa-heart mr-1"></i>Save
+                </button>
+              </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4">
             <div class="card m-3">
               <img
-              src="images/dark_blue_jeans.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Dark Blue Slim Straight Jeans</h5>
-              <p class="card-subtitle">$29.99</p>
-              <button class="btn add-save-btn">
-                <i class="fa fa-shopping-bag mr-1"></i>Add to Cart
-              </button>
-              <button class="btn add-save-btn">
-                <i class="fa fa-heart mr-1"></i>Save
-              </button>
+                src="images/dark_blue_jeans.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dark Blue Slim Straight Jeans</h5>
+                <p class="card-subtitle">$29.99</p>
+                <button class="btn add-save-btn">
+                  <i class="fa fa-shopping-bag mr-1"></i>Add to Cart
+                </button>
+                <button class="btn add-save-btn">
+                  <i class="fa fa-heart mr-1"></i>Save
+                </button>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card m-3">
+              <img src="images/blue_jeans.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Blue Slim Straight Jeans</h5>
+                <p class="card-subtitle">$29.99</p>
+                <button class="btn add-save-btn">
+                  <i class="fa fa-shopping-bag mr-1"></i>Add to Cart
+                </button>
+                <button class="btn add-save-btn">
+                  <i class="fa fa-heart mr-1"></i>Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card m-3">
+              <img
+                src="images/skyblue_slim_jeans.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sky Blue Slim Jeans</h5>
+                <p class="card-subtitle">$29.99</p>
+                <button class="btn add-save-btn">
+                  <i class="fa fa-shopping-bag mr-1"></i>Add to Cart
+                </button>
+                <button class="btn add-save-btn">
+                  <i class="fa fa-heart mr-1"></i>Save
+                </button>
+              </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4">
             <div class="card m-3">
               <img
-              src="images/blue_jeans.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Blue Slim Straight Jeans</h5>
-              <p class="card-subtitle">$29.99</p>
-              <button class="btn add-save-btn">
-                <i class="fa fa-shopping-bag mr-1"></i>Add to Cart
-              </button>
-              <button class="btn add-save-btn">
-                <i class="fa fa-heart mr-1"></i>Save
-              </button>
+                src="images/dark_blue_washed_jeans.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dark Blue Washed Jeans</h5>
+                <p class="card-subtitle">$29.99</p>
+                <button class="btn add-save-btn">
+                  <i class="fa fa-shopping-bag mr-1"></i>Add to Cart
+                </button>
+                <button class="btn add-save-btn">
+                  <i class="fa fa-heart mr-1"></i>Save
+                </button>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card m-3">
+              <img
+                src="images/blue_slim_jeans.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Blue Slim Straight Jeans</h5>
+                <p class="card-subtitle">$29.99</p>
+                <button class="btn add-save-btn">
+                  <i class="fa fa-shopping-bag mr-1"></i>Add to Cart
+                </button>
+                <button class="btn add-save-btn">
+                  <i class="fa fa-heart mr-1"></i>Save
+                </button>
+              </div>
             </div>
           </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card m-3">
-            <img
-            src="images/skyblue_slim_jeans.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Sky Blue Slim Jeans</h5>
-            <p class="card-subtitle">$29.99</p>
-            <button class="btn add-save-btn">
-              <i class="fa fa-shopping-bag mr-1"></i>Add to Cart
-            </button>
-            <button class="btn add-save-btn">
-              <i class="fa fa-heart mr-1"></i>Save
-            </button>
-          </div>
-          </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card m-3">
-            <img
-            src="images/dark_blue_washed_jeans.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Dark Blue Washed Jeans</h5>
-            <p class="card-subtitle">$29.99</p>
-            <button class="btn add-save-btn">
-              <i class="fa fa-shopping-bag mr-1"></i>Add to Cart
-            </button>
-            <button class="btn add-save-btn">
-              <i class="fa fa-heart mr-1"></i>Save
-            </button>
-          </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card m-3">
-            <img
-            src="images/blue_slim_jeans.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Blue Slim Straight Jeans</h5>
-            <p class="card-subtitle">$29.99</p>
-            <button class="btn add-save-btn">
-              <i class="fa fa-shopping-bag mr-1"></i>Add to Cart
-            </button>
-            <button class="btn add-save-btn">
-              <i class="fa fa-heart mr-1"></i>Save
-            </button>
-          </div>
-          </div>
-        </div>
-      </div>
       </div>
     </main>
 
@@ -736,6 +828,9 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://kit.fontawesome.com/fad1eb1ccc.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/fad1eb1ccc.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
