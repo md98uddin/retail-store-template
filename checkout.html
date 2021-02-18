@@ -35,22 +35,100 @@
       <div class="container">
         <div class="row mt-5">
           <div class="col-md-6">
-            <h4 class="text-center py-3">Complete Payment</h4>
             <form>
-              <div class="form-group row">
-                <label for="firstName" class="col-md-3 col-form-label text-center text-sm-left"
+              <h4 class="text-center py-3">Shipping and Handling</h4>
+              <div class="form-group row mb-4">
+                <label
+                  for="firstName"
+                  class="col-md-4 col-form-label text-center"
                   >First Name</label
                 >
-                <div class="col-md-6">
-                  <input type="text" class="form-control" id="firstName" name="firstName"/>
+                <div class="col-8 mx-auto">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Jack"
+                  />
                 </div>
               </div>
-              <div class="form-group row">
-                  <label for="lastName" class="col-md-3 col-form-label text-center text-sm-left">Last Name</label>
-                  <div class="col-md-6">
-                      <input type="text" class="form-control" id="lastName" name="lastName">
-                  </div>  
+              <div class="form-group row mb-4">
+                <label
+                  for="lastName"
+                  class="col-md-4 col-form-label text-center"
+                  >Last Name</label
+                >
+                <div class="col-8 mx-auto">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Frost"
+                  />
                 </div>
+              </div>
+              <div class="form-group row mb-4">
+                <label
+                  for="address"
+                  class="col-md-4 col-form-label text-center"
+                  ><span class="d-none d-lg-inline">Street</span> Address</label
+                >
+                <div class="col-8 mx-auto">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    name="address"
+                    placeholder="5405 Madison Square, 11108 D5"
+                  />
+                </div>
+              </div>
+              <div class="form-group row mb-3">
+                <label
+                  for="city/country"
+                  class="col-md-4 col-form-label text-center mr-0"
+                  >City & Country</label
+                >
+                <div class="col-8 mx-auto">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city/country"
+                    name="city/country"
+                    placeholder="New York City, USA..."
+                  />
+                </div>
+              </div>
+              <h4 class="text-center py-3">Payment Information</h4>
+              <div class="form-group row mb-3">
+                <label
+                  for="cardNumber"
+                  class="col-md-4 col-form-label text-center mr-0"
+                  >Card <span class="d-none d-lg-inline">Number</span> <span class="d-lg-none">No.</span></label
+                >
+                <div class="col-8 mx-auto">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cardNumber"
+                    name="cardNumber"
+                    placeholder="4207493950203574"
+                  />
+                </div>
+              </div>
+              <div class="form-group-row">
+                <div class="col-12 offset-4 offset-md-5 offset-lg-6 cc-card">
+                  <i id="cc-visa" class="fab fa-cc-visa fa-lg px-1"></i>
+                  <i id="cc-masterCard"class="fab fa-cc-mastercard fa-lg px-1"></i>
+                  <i id="cc-discover" class="fab fa-cc-discover fa-lg px-1"></i>
+                  <i id="cc-amex" class="fab fa-cc-amex fa-lg px-1"></i>
+                </div>
+              </div>
+              <div class="form-group row py-5">
+                  <button class="col-3 btn btn-sm mx-auto shop-him-her-btn" type="submit">Place Order</button>
+              </div>
             </form>
           </div>
           <div class="col-md-6 table-responsive">
@@ -131,5 +209,6 @@
       src="https://kit.fontawesome.com/fad1eb1ccc.js"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
